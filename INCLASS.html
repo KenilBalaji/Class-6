@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Class 6</h1>
+
+        <br>
+    <hr style="border: 2px solid #000000;">
+    <br>
+    <fieldset>
+        <legend>Instructions:</legend>
+        <ul>
+            <li>Fill in all the fields with accurate information.</li>
+            <li>Name: Enter your full name.</li>
+            <li>Email: Provide a valid email address.</li>
+            <li>Age: Must be a positive number.</li>
+            <li>Contact Number: Must be a 10-digit number.</li>
+            <li>Click "Submit" to send your details.</li>
+        </ul>
+    </fieldset>
+
+    <br>
+    <hr style="border: 2px solid #000000;">
+    <h3>Personal Details Form:</h3>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="password" id="contact" name="contact" pattern="[0-9]{10}" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <h3>Gender<h3>
+    <form action="/submit" method="post">
+        <input type="radio" id="female" name="Gender" value="female"><label>Female</label><br>
+        <input type="radio" id="male" name="Gender" value="male"><label>Male</label><br>
+
+    <h3>Checkbox</h3>
+
+    <input type="checkbox" name="Laborghini" value="Laborghini">
+        <label for="vehicle"> Laborghini</label><br> 
+    <input type="checkbox" name="Corvet" value="Corvet">
+        <label for="vehicle"> Corvet</label><br> 
+    <input type="checkbox" name="BMW" value="BMW">
+        <label for="vehicle"> BMW</label><br>
+
+    <label>B Day</label>
+    <input type="date" id="bday" name="bday"><br><br>
+
+    <h3>drop Down</h3>
+    <label>Choose a car:</label>
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="corvet">Corvet</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="bmw">BMW</option>
+    
+
+</body>
+</html>
