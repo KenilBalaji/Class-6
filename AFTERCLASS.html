@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        body {
+            background: linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+            font-family: 'Bangers', cursive, Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fortnite-form-container {
+            background: rgba(34, 34, 34, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 40px 30px;
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffe600;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff00cc;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px 0;
+            font-size: 1.2em;
+            color: #ffe600;
+            text-shadow: 1px 1px 0 #000;
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 10px;
+            font-size: 1em;
+            background: #222;
+            color: #fff;
+            box-shadow: 0 2px 8px #ff00cc44;
+        }
+        input:focus, select:focus {
+            outline: 2px solid #ff00cc;
+        }
+        button {
+            background: linear-gradient(90deg, #ffe600 0%, #ff00cc 100%);
+            color: #222;
+            font-size: 1.2em;
+            font-family: 'Bangers', cursive, Arial, sans-serif;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 30px;
+            margin-top: 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 16px #ff00cc88;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #ff00cc 0%, #ffe600 100%);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="fortnite-form-container">
+        <h1>Fortnite Registration</h1>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" required pattern="[0-9]{10,15}">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+
+            <button type="submit">Drop In!</button>
+        </form>
+    </div>
+</body>
+</html>
